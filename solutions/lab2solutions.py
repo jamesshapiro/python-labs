@@ -107,7 +107,7 @@ def fizzbuzz(n):
 
     Another approach, as we'll learn about soon, is to use `filter`:
 
-        return sum(filter(lambda i: i % 3 == 0 and i % 5 == 0, range(n)))
+        return sum(filter(lambda i: i % 3 == 0 or i % 5 == 0, range(n)))
 
     However, in many ways, this isn't much different, since we're still specifying a
     function (admittedly, a `lambda` or anonymous function - which we'll learn about Week 4)
